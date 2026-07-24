@@ -1,6 +1,6 @@
 # Stock Price Prediction with PyTorch — LSTM vs GRU (DJIA 30 Stock Time Series)
 
-Bu proje, **Microsoft AI Summer School** programı kapsamında geliştirilmiştir. Kaggle DJIA 30 Stock Time Series veri seti kullanılarak tekil hisse senedi (varsayılan: **AAPL**) fiyat tahmini üzerine gerçekleştirilen bir zaman serisi regresyon çalışmasıdır.
+Bu proje, Microsoft AI Summer School programı kapsamında geliştirilmiştir. Kaggle DJIA 30 Stock Time Series veri seti kullanılarak tekil hisse senedi (varsayılan: **AAPL**) fiyat tahmini üzerine gerçekleştirilen bir zaman serisi regresyon çalışmasıdır.
 
 Saf zaman serisi mimarilerinin performansına odaklanır özellikle PyTorch ile implement edilen **LSTM (Long Short-Term Memory)** ve **GRU (Gated Recurrent Unit)** modellerini karşılaştırır.
 
@@ -43,8 +43,8 @@ Veri: AAPL, 2006-01-03 → 2017-12-29 (3019 gün). Split tarihi: 2015-08-10 (tra
 | GRU   | 34.5609 | 5.8788 | ~7.2              |
 
 **Bulgular:**
-- **GRU, LSTM'e kıyasla RMSE'de yaklaşık %34 daha düşük hata sergiledi** — bu veri seti ve hiperparametreler için daha sağlam bir mimari.
-- Test setinin ilk yarısında (fiyat yatay seyrederken) her iki model de gerçek fiyatı başarıyla takip ediyor. Asıl ayrışma, hissenin hızla yükseldiği son ~200 günde ortaya çıkıyor — LSTM bu ivmeyi yakalayamayıp düzleşirken, GRU nispeten daha iyi takip ediyor; ancak ikisi de klasik RNN "lag" (geriden gelme) zaafından tam olarak kaçamıyor.
+- **GRU, LSTM'e kıyasla RMSE'de yaklaşık %34 daha düşük hata sergiledi** bu veri seti ve hiperparametreler için daha sağlam bir mimari.
+- Test setinin ilk yarısında (fiyat yatay seyrederken) her iki model de gerçek fiyatı başarıyla takip ediyor. Asıl ayrışma, hissenin hızla yükseldiği son ~200 günde ortaya çıkıyor. LSTM bu ivmeyi yakalayamayıp düzleşirken, GRU nispeten daha iyi takip ediyor; ancak ikisi de klasik RNN "lag" (geriden gelme) zaafından tam olarak kaçamıyor.
 - Eğitim süresi teorik beklentinin (GRU'nun daha az parametreyle daha hızlı eğitilmesi) tersine çıktı — bu, mimarinin kendisinden değil, kullanılan ortamdaki CPU/thread davranışından kaynaklanıyor.
 
 ## ⚠️ Sınırlamalar
