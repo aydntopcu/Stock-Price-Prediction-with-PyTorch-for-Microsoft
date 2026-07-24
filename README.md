@@ -2,7 +2,7 @@
 
 Bu proje, **Microsoft AI Summer School** programı kapsamında geliştirilmiştir. Kaggle DJIA 30 Stock Time Series veri seti kullanılarak tekil hisse senedi (varsayılan: **AAPL**) fiyat tahmini üzerine gerçekleştirilen bir zaman serisi regresyon çalışmasıdır.
 
-Hibrit NLP/Sentiment projelerinden bağımsız olarak bu depo, saf zaman serisi mimarilerinin performansına odaklanır — özellikle PyTorch ile implement edilen **LSTM (Long Short-Term Memory)** ve **GRU (Gated Recurrent Unit)** modellerini karşılaştırır.
+Hibrit NLP/Sentiment projelerinden bağımsız olarak bu depo, saf zaman serisi mimarilerinin performansına odaklanır özellikle PyTorch ile implement edilen **LSTM (Long Short-Term Memory)** ve **GRU (Gated Recurrent Unit)** modellerini karşılaştırır.
 
 ---
 
