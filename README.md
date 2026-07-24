@@ -1,4 +1,4 @@
-# Stock Price Prediction with PyTorch — LSTM vs GRU (DJIA 30 Stock Time Series)
+# Stock Price Prediction with PyTorch  [LSTM vs GRU (DJIA 30 Stock Time Series)]
 
 Bu proje, **Microsoft AI Summer School** programı kapsamında geliştirilmiştir. Kaggle DJIA 30 Stock Time Series veri seti kullanılarak tekil hisse senedi (varsayılan: **AAPL**) fiyat tahmini üzerine gerçekleştirilen bir zaman serisi regresyon çalışmasıdır.
 
